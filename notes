@@ -53,3 +53,10 @@ git checkout -b branchName
 OR
 git branch branchName
 git checkout branchName
+
+//Fork and sync with original repository
+1. Fork project on Github
+2. Change to dev folder on your local repo, git clone URL (taken from fork-project you just copied)
+3. establish upstream remote -> git remote add upstream URL (clone URL taken from source not fork)
+(you should have remote origin (your URL) & upstream (source URL)
+4. git push origin master
