@@ -1,0 +1,42 @@
+# checking version
+git --version
+---
+//setting up
+git config --global user.name "Your Name"
+git config --global user.email "Your Email"
+git config --global core.autocrlf input
+git config --global core.safecrlf true
+//initialising repository
+git init
+// adding to staging or removing from
+git add fileName (adding)
+git rm fileName (removing)
+git reset HEAD fileName (unstaging)
+// commiting changes
+git commit -m "First commit"
+// checking remote connection with Github
+git remote -v
+//setting up remote connection
+git remote add origin git@github.com:maciejk77/your-project-name-taken-from-github
+// pushing to github
+git push -u origin master (first push, setting default branch 'master', 'origin' - naming convention for shared projects))
+git push (second and sunsequent pushes to github - if the same branch)
+// Pulling from github to local repository
+git pull (will pull files and parent folder to local folder you are in)
+// Other useful
+git log (preview of commits)
+git checkout master (switch back to first commit)
+git checkout a1833 (minimum four characters needed, switch back to the commit specified by unique key)
+//cloning from github to local repository - folder & files included
+git clone https://github.com/maciejk77/git-commands.git
+//reseting staging area
+git reset HEAD fileName
+//Undo commited change
+git revert HEAD fileName
+//Amending last commit
+git commit --amend -m "New updated description"
+//New branch
+git checkout -b branchName
+OR
+git branch branchName
+git checkout branchName
